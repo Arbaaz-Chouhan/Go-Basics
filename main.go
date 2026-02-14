@@ -43,4 +43,8 @@ func main() {
 
 	switchCondition() // switch-condition
 
+	ReadFile()   // read-file.go
+	WriteFile()  // write.go
+	CreateFile() // write.go
+
 }

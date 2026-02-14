@@ -1,0 +1,2 @@
+Hello from os.Create()
+Second line
