@@ -3,14 +3,14 @@ package main
 func main() {
 	// fmt.Println("Hello World!") // hello-world
 	// Variables()                 // variables
-	// dataTypes()                 // data-types
-	// operators()                 // operators
+	// dataTypes() // data-types
+	// operators() // operators
 
 	// ifElseConditions() // if-else-conditions
 	// equals()           // if-else-conditions
 	// marks()            // if-else-conditions
 
-	// function()                    // function
+	// function() // function
 	// forloopFunction()             // function
 	// fmt.Println(add(10, 20))      // function
 	// fmt.Println(multiply(10, 20)) //function
@@ -41,10 +41,25 @@ func main() {
 	// defer fmt.Println("2")
 	// defer fmt.Println("3")
 
-	switchCondition() // switch-condition
+	// switchCondition() // switch-condition
 
-	ReadFile()   // read-file.go
-	WriteFile()  // write.go
-	CreateFile() // write.go
+	// ReadFile() // read-file.go
+	// WriteFile()  // write.go
+	// CreateFile() // write.go
+
+	typeDefinition() // types.go
+	typeAlias()      // types.go
+	structFn()       // types.go
+
+	// embedding() // embedding.go
+	// embeddingMethod()
+
+	// interfacefn() // interface.go
+
+	// go printMessage("Hello")
+	// printMessage("world")
+
+	// channel()
+	// worker2()
 
 }
