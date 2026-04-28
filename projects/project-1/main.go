@@ -22,6 +22,10 @@ func main() {
 	r.GET("/getnumbers", getnumbers)
 	r.GET("/getallusers", getallusers)
 	r.POST("/register", Register)
+	r.POST("/login", Login)
+	r.POST("/addproduct", AddProduct)
+	r.GET("/getproduct", GetProduct)
+	r.POST("/userinfo", UserInfo)
 
-	r.Run(":4000")
+	r.Run(":5000")
 }
