@@ -28,7 +28,7 @@ func ConnectDatabase() {
 	dbPort := os.Getenv("DB_PORT")
 
 	// 3. PostgreSQL ka connection string (DSN) banana
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Kolkata", 
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Kolkata",
 		dbHost, dbUser, dbPassword, dbName, dbPort)
 
 	// 4. GORM ke zariye DB se connect karna
