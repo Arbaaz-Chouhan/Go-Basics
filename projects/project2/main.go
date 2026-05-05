@@ -11,7 +11,7 @@ func main() {
 	// Database connect function call kar rahe hain
 	ConnectDatabase()
 	// Create the 'users' table in the database
-	DB.AutoMigrate(&User{}, &Product{})
+	DB.AutoMigrate(&User{}, &Product{}, &student{})
 	fmt.Println("Table created successfully!")
 
 	r := gin.Default()

@@ -21,6 +21,14 @@ type Product struct {
 	Description string  `gorm:"not null " json:"description"`
 }
 
+type student struct {
+	ID    uint   `gorm: "autoIncrement;primaryKey" json:"id" `
+	Name  string `gorm: "not null" json:"name"`
+	Email string `gorm:"not null" json:"email"`
+	Age   uint   `gorm:"not null" json:"age"`
+	Class string `gorm:"not null" json:"class"`
+}
+
 func CreateUser(c *gin.Context) {
 	var user User
 
@@ -81,4 +89,17 @@ func DeleteProductById(c *gin.Context) {
 	// 2. Agar mil gaya, toh delete karein
 	DB.Delete(&product)
 	c.JSON(http.StatusOK, gin.H{"message": "Product deleted successfully"})
+}
+
+func CreateNewStudent(c *gin.Context) {
+	var newStudent student
+
+	err := c.ShouldBindJSON(&newStudent)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	DB.Create(&newStudent)
+	c.JSON(http.StatusOK, newStudent)
 }

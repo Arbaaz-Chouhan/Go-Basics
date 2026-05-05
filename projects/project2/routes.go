@@ -10,4 +10,6 @@ func SetupRoutes(r *gin.Engine) {
 	r.POST("/products", CreateNewProduct)
 	r.GET("/products", GetAllProducts)
 	r.DELETE("/products/:id", DeleteProductById)
+
+	r.POST("/students", CreateNewStudent)
 }
